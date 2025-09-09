@@ -1,0 +1,16 @@
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# VS Code
+.vscode/
+
+# Node (only if you use npm for tooling like Tailwind, React, etc.)
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
