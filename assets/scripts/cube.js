@@ -86,6 +86,10 @@ controls.dampingFactor = 0.05;
 controls.enableZoom = true;
 controls.enablePan = false;
 
+// Limit zoom
+controls.minDistance = 4;
+controls.maxDistance = 10;
+
 // === Keyboard Input for Cube Rotation ===
 const keyState = {
   w: false,
