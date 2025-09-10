@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Nicholas Facciola's Projects</title>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../assets/css/style.css">
+  <meta charset="UTF-8" />
+  <title>Nicholas Facciola's Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/projects.css">
+  <script defer src="../assets/scripts/navbar.js"></script>
+  <script defer src="../assets/scripts/projects.js"></script>
 </head>
-<body>
-    <canvas id="bg"></canvas>
-    <div class="hero">
-        <h1>Projects</h1>
-    </div>
-<script src="../assets/scripts/navbar.js"></script>
+<body class="page">
+  <canvas id="bg"></canvas>
+  <div id="navbar"></div>
+
+  <div class="hero">
+    <h1>Projects</h1>
+  </div>
+
+  <main class="projects" role="main">
+    <section class="projects__grid" id="projectsGrid"></section>
+  </main>
 </body>
 </html>
