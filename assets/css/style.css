@@ -1,12 +1,16 @@
 body {
   background: black;
-  opacity: 0;
+  opacity: 1;                /* default visible */
   transition: opacity 2s ease-in;
 }
 
 body.fade-in {
   opacity: 1;
-  background: linear-gradient(135deg, #010102, #20152b, #352049); /* your gradient */
+  background: linear-gradient(135deg, #010102, #20152b, #352049);
+}
+
+body.fade-start {
+  opacity: 0;                /* only applied on home */
 }
 
 body, html {
