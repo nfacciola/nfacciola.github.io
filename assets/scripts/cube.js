@@ -136,6 +136,42 @@ window.addEventListener('resize', () => {
 
 const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
+let hoveredFaceIndex = null;
+
+// Track original material colors
+const originalMaterials = materials.map(mat => mat.clone());
+
+function onMouseMove(event) {
+  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+  raycaster.setFromCamera(mouse, camera);
+
+  const intersects = raycaster.intersectObject(cube);
+
+  if (intersects.length > 0) {
+    const faceIndex = Math.floor(intersects[0].face.materialIndex);
+
+    if (hoveredFaceIndex !== faceIndex) {
+      // Reset previous face
+      if (hoveredFaceIndex !== null) {
+        cube.material[hoveredFaceIndex].map = originalMaterials[hoveredFaceIndex].map;
+        cube.material[hoveredFaceIndex].color.copy(originalMaterials[hoveredFaceIndex].color);
+      }
+
+      // Darken hovered face
+      hoveredFaceIndex = faceIndex;
+      cube.material[faceIndex].color.setScalar(0.5); // scales RGB values to darken
+    }
+  } else {
+    // Reset if not hovering any face
+    if (hoveredFaceIndex !== null) {
+      cube.material[hoveredFaceIndex].map = originalMaterials[hoveredFaceIndex].map;
+      cube.material[hoveredFaceIndex].color.copy(originalMaterials[hoveredFaceIndex].color);
+      hoveredFaceIndex = null;
+    }
+  }
+}
 
 const faceMappings = [
   { label: "GitHub", url: "https://github.com/nfacciola" },
@@ -165,4 +201,6 @@ function onClick(event) {
   }
 }
 
+
+window.addEventListener("mousemove", onMouseMove);
 window.addEventListener("click", onClick);
