@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact Nicholas Facciola</title>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>Contact Nicholas Facciola</title>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/contact.css">
 </head>
-<body>
-    <canvas id="bg"></canvas>
-    <div class="hero">
-        <h1>Contact Me</h1>
-        <p>Coming soon</p>
-    </div>
-<script src="../assets/scripts/navbar.js"></script>
+<body class="page">
+  <canvas id="bg"></canvas>
+  <div id="navbar"></div>
+
+  <div class="hero">
+    <h1>Contact Me</h1>
+  </div>
+
+  <main class="contact" role="main">
+    <form id="contactForm" action="https://formspree.io/f/xyzdoodz" method="POST">
+      <label>
+        Your Name:
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Your Email:
+        <input type="email" name="_replyto" required>
+      </label>
+      <label>
+        Message:
+        <textarea name="message" required></textarea>
+      </label>
+      <button type="submit">Send</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+  </main>
+
+  <script src="../assets/scripts/navbar.js"></script>
+  <script src="../assets/scripts/contact.js"></script>
 </body>
 </html>
