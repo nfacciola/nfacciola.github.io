@@ -1,0 +1,56 @@
+/* One card per row, full width with max-width for readability */
+main.projects {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+}
+
+.projects__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-card {
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(0,0,0,0.28);
+    border-radius: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(6px);
+    transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+.project-card:hover { transform: translateY(-2px); background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.18); }
+
+.project-card__media iframe,
+.project-card__media .yt-lite {
+    width: 100%;
+    height: 506px; /* 16:9 aspect for 900px wide */
+    max-height: 60vh;
+}
+
+.project-card__body { padding: 1rem 1.25rem; display: grid; gap: 0.75rem; }
+.project-card__title { margin: 0; font-size: 1.3rem; }
+.project-card__desc { margin: 0; color: rgba(255,255,255,0.85); line-height: 1.55; }
+
+.project-card__actions { display: flex; gap: 0.75rem; margin-top: 0.5rem; }
+.btn {
+    appearance: none; border: 1px solid rgba(255,255,255,0.12); background: transparent; color: inherit;
+    padding: 0.55rem 0.85rem; border-radius: 10px; cursor: pointer; text-decoration: none;
+    font-size: 0.9rem; transition: background 140ms ease, border-color 140ms ease;
+}
+.btn:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.2); }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-card__media iframe,
+    .project-card__media .yt-lite {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    }
+}
+    /* Enable scrolling on this page (overrides global overflow:hidden) */
+body.page { overflow-y: auto; overflow-x: hidden; height: auto; }
+html { overflow-y: auto; height: auto; }

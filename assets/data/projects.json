@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Patient Portal Test Automation (MVP)",
+    "youtubeId": "fyhguduQQjg",
+    "github": "https://github.com/nfacciola/PatientPortalTestAutomation",
+    "description": "Selenium + Pytest MVP with POM, markers, fixtures, and CI (pytest-html)."
+  },
+  {
+    "title": "Quant/Qual Trading Bot",
+    "youtubeId": "jheOa-g10S8",
+    "github": "https://github.com/nfacciola/algo-trading-bot",
+    "description": "An algorithmic trading application that combines quantitative and qualitative analysis to make informed buy/sell/hold decisions on stocks."
+  }
+]
