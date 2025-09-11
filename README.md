@@ -41,8 +41,8 @@ repo-root/
 ## 🚀 Setup & Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/portfolio-site.git
-   cd portfolio-site
+   git clone https://github.com/nfacciola/nfacciola.github.io.git
+   cd nfacciola.github.io
    ```
 2. Open `index.html` in a browser to view locally.
 3. For the contact form:
