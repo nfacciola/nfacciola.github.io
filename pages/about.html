@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About Nicholas Facciola</title>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>About Nicholas Facciola</title>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/about.css">
 </head>
-<body>
-    <canvas id="bg"></canvas>
-    <div class="hero">
-        <h1>About Me</h1>
-        <p>Coming soon</p>
-    </div>
-<script src="../assets/scripts/navbar.js"></script>
+<body class="page">
+  <canvas id="bg"></canvas>
+  <div id="navbar"></div>
+
+  <div class="hero">
+    <h1>About Me</h1>
+  </div>
+
+  <main class="about" role="main">
+    <section class="about__card">
+      <div class="about__image">
+        <img src="../assets/images/me.jpg" alt="Photo of Nicholas Facciola">
+      </div>
+      <div class="about__content">
+        <h2>Hi, I'm Nicholas Facciola</h2>
+        <p>
+          I am a software engineer with a focus on QA automation and data analysis, with hands-on experience building tools and workflows 
+          that improve reliability and efficiency. At Intel, I created an e-temp recovery flow in C# for Panther Lake that turned failing extreme temp 
+          units into commercial temp units, saving significant cost, and I developed a CI/CD pipeline to validate pull requests across test modules. 
+          I also designed Python workflows to capture and analyze thermal test data on Meteor Lake and Bartlett Lake, 
+          applying statistical methods to support engineering decisions.
+        </p>
+        <p>
+          What drives me is solving hard problems with creative solutions, and I take pride in being responsible, dependable, and 
+          delivering on what I promise. Outside of work, I enjoy running, hiking, camping, and spending time with my cats — but above all, 
+          I hope people remember me for my positive and professional attitude.
+        </p>
+        <a class="btn" href="../assets/data/0_0_base_nfresume1b.pdf" target="_blank">Download Resume</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/scripts/navbar.js"></script>
 </body>
 </html>
