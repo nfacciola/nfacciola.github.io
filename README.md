@@ -12,31 +12,30 @@ Built with **HTML, CSS, JavaScript, and Three.js** to create an interactive 3D c
 repo-root/
 ├── assets/
 │   ├── css/
-│   │   ├── style.css        # Global styles
-│   │   ├── projects.css     # Projects page styles
-│   │   ├── contact.css      # Contact form styles
-│   │   └── about.css        # About page styles
+│   │   ├── style.css                 # Global styles
+│   │   ├── projects.css              # Projects page styles
+│   │   ├── contact.css               # Contact form styles
+│   │   └── about.css                 # About page styles
 │   ├── data/
-│   │   └── projects.json    # Project metadata
-│   ├── images/              # Cube textures & profile photo
+│   │    ├── projects.json            # Project metadata
+|   |    └── 0_0_base_nfresume1b.pdf  # Resume
+│   ├── images/                       # Cube textures & profile photo
 │   ├── scripts/
-│   │   ├── cube.js          # Three.js cube logic
-│   │   ├── navbar.js        # Dynamic navbar loader
-│   │   ├── projects.js      # Renders project cards
-│   │   └── contact.js       # Handles contact form submission
-│   └── docs/
-│       └── Nicholas_Facciola_Resume.pdf
+│   │   ├── cube.js                   # Three.js cube logic
+│   │   ├── navbar.js                 # Dynamic navbar loader
+│   │   ├── projects.js               # Renders project cards
+│   │   └── contact.js                # Handles contact form submission
 │
 ├── pages/
-│   ├── about.html           # About page
-│   ├── projects.html        # Projects listing
-│   └── contact.html         # Contact form
+│   ├── about.html                    # About page
+│   ├── projects.html                 # Projects listing
+│   └── contact.html                  # Contact form
 │
 ├── assets/components/
-│   └── navbar.html          # Navbar HTML partial
+│   └── navbar.html                   # Navbar HTML partial
 │
-├── index.html               # Homepage with cube
-└── README.md                # Project documentation
+├── index.html                        # Homepage with cube
+└── README.md                         # Project documentation
 ```
 
 ## 🚀 Setup & Usage
