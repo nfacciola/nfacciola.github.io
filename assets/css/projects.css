@@ -51,6 +51,3 @@ main.projects {
     aspect-ratio: 16 / 9;
     }
 }
-    /* Enable scrolling on this page (overrides global overflow:hidden) */
-body.page { overflow-y: auto; overflow-x: hidden; height: auto; }
-html { overflow-y: auto; height: auto; }
